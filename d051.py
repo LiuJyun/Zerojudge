@@ -1,0 +1,1 @@
+print('{:.3f}'.format((int(input())-32)*5/9))
