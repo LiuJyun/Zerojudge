@@ -1,27 +1,35 @@
-# n = int(input())
+# movie = {'name':'Saving Private Ryan', #電影名稱
+#          'year':1998, #電影上映年份
+#          'director':'Steven Spielberg',#導演
+#          'Writer': 'Robert Rodat', #編劇
+#          'Stars':['Tom Hanks', 'Matt Damon', 'Tom Sizemore'],#明星
+#          'Oscar ':['Best Director','Best Cinematography','Best Sound','Best Film Editing','Best Effects, Sound Effects Editing']
+#          #獲得的奧斯卡獎項
+#         }
 #
-# a = 0
-# b = 1
-# c = a + b
-#
-# for i in range(n):
-#     if i == 0:
-#         print(1)
-#     else:
-#         print(c)
-#         a = b
-#         b = c
-#         c = a + b
+# for i in movie['Stars']:
+#     print(i)
 
-n = int(input())
-a = []
-for i in range(n):
-    a.append(input())
-m = int(input())
-for i in range(m):
-    s = input()
-    if s in a:
-        print('yes')
-    else:
-        print('no')
-        a.append(s)
+# https://movies.yahoo.com.tw/movieinfo_main.html/id=13379
+
+# import os
+#
+# file = 'test.txt'
+# # f = open(file, 'w')
+# # f.write('tessssst\n')
+# # f.write('testttt')
+# # f.close()
+#
+# if os.path.isfile(file):
+#     f = open(file, 'r')
+#     lines = f.readlines()
+#     for l in lines:
+#         print(l)
+#     f.close()
+
+
+c = -100567.123
+if isinstance(c, float):
+    print('{:.1f}'.format(c))
+else:
+    print(c)
