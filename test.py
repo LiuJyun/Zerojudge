@@ -1,35 +1,15 @@
-# movie = {'name':'Saving Private Ryan', #電影名稱
-#          'year':1998, #電影上映年份
-#          'director':'Steven Spielberg',#導演
-#          'Writer': 'Robert Rodat', #編劇
-#          'Stars':['Tom Hanks', 'Matt Damon', 'Tom Sizemore'],#明星
-#          'Oscar ':['Best Director','Best Cinematography','Best Sound','Best Film Editing','Best Effects, Sound Effects Editing']
-#          #獲得的奧斯卡獎項
-#         }
-#
-# for i in movie['Stars']:
-#     print(i)
-
-# https://movies.yahoo.com.tw/movieinfo_main.html/id=13379
-
-# import os
-#
-# file = 'test.txt'
-# # f = open(file, 'w')
-# # f.write('tessssst\n')
-# # f.write('testttt')
-# # f.close()
-#
-# if os.path.isfile(file):
-#     f = open(file, 'r')
-#     lines = f.readlines()
-#     for l in lines:
-#         print(l)
-#     f.close()
-
-
-c = -100567.123
-if isinstance(c, float):
-    print('{:.1f}'.format(c))
+a = {'A':10,'B':11,'C':12,'D':13,'E':14,'F':15,'G':16,'H':17, 'I':34, 'J':18,'K':19,'L':20,'M':21,'N':22,'O':35, 'P':23,'Q':24,'R':25,'S':26,'T':27,'U':28,'V':29,'W':32, 'X':30, 'Y':31, 'Z':33}
+b = input()
+c = a[b[0]]
+dg = a[b[0]] % 10
+cg = (c - dg) / 10
+h = cg + (dg * 9)
+t = 0
+for i in range(8, 0, -1):
+    l = (9 - i)
+    t = t + int(b[l]) * i
+q = h + t + int(b[9])
+if q % 10 == 0:
+    print('real')
 else:
-    print(c)
+    print('fake')
